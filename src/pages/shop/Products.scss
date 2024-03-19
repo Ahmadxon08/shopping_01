@@ -1,0 +1,58 @@
+.products {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+
+  .card {
+    width: 30%;
+    height: 460px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 260px;
+    }
+    .texts {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 50%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid #000;
+        color: #fff;
+        background-color: #000;
+        transition: 0.3s ease;
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+}
