@@ -1,6 +1,13 @@
 .carts {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+  h1{
+    display: flex;
+    font-size: 42px;
+    color: #333;
+  }
   .cart_head {
     display: flex;
     align-items: center;
@@ -70,21 +77,63 @@
           font-size: 22px;
           height: 30px;
         }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          height: 30px;
+          outline: none;
+          text-align: center;
+          font-size: 22px;
+          background-color: #493333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+      }
+     
+    }
+  }
+  .check_out {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    right: 50px;
+    position: absolute;
+    gap: 8px;
+    p {
+      color: #493333;
+      font-size: 38px;
+      font-weight: bold;
+    }
+    .check_btn{
+        display: flex;
+        align-items: center;
+        gap: 16px;
         button{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 20%;
+            padding: 16px 8px;
+         
             height: 30px;
             outline: none;
             text-align: center;
-            font-size: 22px;
+            font-size: 16px;
+            border-radius: 16px;
             background-color: #493333;
             color: #fff;
+            transition:  .3s;
             border: none;
+            border: 1px solid #493333;
             cursor: pointer;
         }
-      }
+        button:hover{
+            background-color: #fff;
+            color: #493333;
+        }
     }
   }
 }

@@ -1,58 +1,98 @@
-.products {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-
-  .card {
-    width: 30%;
-    height: 460px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+.shop {
+  margin-top: 100px;
+  .products {
+    margin-top: 30px;
     display: flex;
-    overflow: hidden;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 
-    img {
-      width: 100%;
-      height: 260px;
-    }
-    .texts {
+    width: 100%;
+    gap: 30px;
+
+    .card {
+      width: 30%;
+      height: 490px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
       display: flex;
+      padding-bottom: 25px;
+      overflow: hidden;
+      justify-content: space-between;
       flex-direction: column;
-      padding: 20px;
-      h1 {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 260px;
       }
-    }
-    .btns {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      button {
-        width: 50%;
-        height: 40px;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 600;
-        border: 1px solid #000;
-        color: #fff;
-        background-color: #000;
-        transition: 0.3s ease;
-        &:hover {
-          background-color: #fff;
-          color: #000;
+      .texts {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-family: sans-serif;
+          color: #333;
+        }
+        h2 {
+          font-size: 26px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          font-family: sans-serif;
+          color: #333;
+          font-family: sans-serif;
+        }
+        span {
+          font-size: 22px;
+          font-weight: bold;
+          color: #333;
+          font-family: sans-serif;
         }
       }
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          width: 50%;
+          height: 40px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 600;
+          border: 1px solid #000;
+          color: #fff;
+          font-family: sans-serif;
+          background-color: #000;
+          transition: 0.3s ease-in-out ;
+          &:hover {
+            transform: scale(0.98);
+            background-color: #fff;
+            color: #000;
+          }
+        }
+        button:active {
+          transform: scale(0.93);
+        }
+      }
+    }
+  }
+  .shop_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+      color: #423838;
     }
   }
 }

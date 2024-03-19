@@ -32,11 +32,13 @@ const Cart = () => {
         {totalAmountPrice > 0 ? (
           <div className="check_out">
             <p>Subtotal:$ {totalAmountPrice}</p>
-            <button onClick={() => navigate("/")}>Continue Shopping </button>
-            <button>Check Out</button>
+            <div className="check_btn">
+              <button onClick={() => navigate("/")}>Continue Shopping </button>
+              <button>Check Out</button>
+            </div>
           </div>
         ) : (
-          <h1>Your cart is Empty</h1>
+          <h1>Your cart is Empty 😶‍🌫️</h1>
         )}
       </div>
     </div>
